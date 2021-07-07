@@ -13,3 +13,9 @@ I want to master a new profession in my life. I am a approachable and communicat
 -  Eager to learn  
 -  Cooperative  
 -  Optimistic  
+
+**Skills:**  
+-  Ability to work efficiently both individually and in a team  
+-  Decision making skills  
+-  Strong analytical thinking  
+-  Willingness to learn 
