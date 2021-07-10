@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML, CSS & Git Basics</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+            /* Обнуляющие стили */
+
+            *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            }
+            *,*:before,*:after{
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            :focus,:active{outline: none;}
+            a:focus,a:active{outline: none;}
+            nav,footer,header,aside{display: block;}
+            html,body{
+                height: 100%;
+                width: 100%;
+                font-size: 100%;
+                line-height: 1;
+                font-size: 10px;
+                -ms-text-size-adjust: 100%;
+                -moz-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+            input,button,textarea{font-family:inherit;}
+            input::-ms-clear{display: none;}
+            button{cursor: pointer;}
+            button::-moz-focus-inner {padding:0;border:0;}
+            a, a:visited{text-decoration: none;}
+            a:hover{text-decoration: none;}
+            ul li{list-style: none;}
+            img{vertical-align: top;}
+            h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+            /**************************/
+
+			body{
+				background-image: url(images/Fon.jpg);
+			}
+
+            .wrapper {
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            header {
+                height: 80px;
+            }
+
+            .bogdan-cv {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } 
+
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                letter-spacing: 1.25;
+                font-size: 45px;
+            }
+
+            .bogdan-cv {
+                text-align: center;
+            }
+
+            .main-container {
+                padding: 5% 0;
+                display: grid;
+                grid-template-columns: 35% 65%;
+            }
+
+            .info-image {
+                height: 250px;
+                margin-bottom: 3%;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .photo {
+				width: 250px;
+                height: 250px;
+                margin: 0 auto;
+				border-radius: 50%;
+				border: solid 5px #B5B5B5;
+				box-shadow: 0 0 9px rgba(3, 3, 3, .75);
+				object-fit: cover;
+            }
+
+            .contacts {
+                font-weight: normal;
+                font-style: normal;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+
+            li {
+                padding-bottom: 1%;
+            }
+
+            .parf {
+                font-weight: bold;
+            }
+
+            .goal-header {
+                text-align: center;
+                padding-bottom: 3%;
+            }
+
+            h2 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                letter-spacing: 1.25;
+                font-size: 40px;
+            }
+
+            .title-image {
+                margin: 0 auto;
+                width: 500px;
+                padding: 3% 0;
+            }
+
+            .line {
+                width: 100%;
+                height: auto;
+            }
+
+            .subtitle {
+                letter-spacing: 1.25;
+                font-weight: normal;
+                font-style: normal;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                opacity: 60%;
+            }
+            h3 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                letter-spacing: 1.25;
+                font-size: 32px;
+                padding-bottom: 2%;
+            }
+
+            .live {
+                line-height: 1.4;
+                font-weight: normal;
+                font-style: normal;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 18px;
+                padding: 1% 0;
+            }
+
+            .live a {
+                font-size: 18px;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+
+            .personal-skill {
+                line-height: normal;
+                font-weight: normal;
+                font-style: normal;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+
+            .personal-skill li {
+                list-style: disc;
+                margin-left: 30px;
+            }
+
+            .content-footer {
+                height: 80px;
+                display: flex;
+                width: 90%;
+                margin: 0 auto;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 24px;
+            }
+            .content-item {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                text-align: center;
+                /* font-size: 24px; */
+            }
+
+            .github:hover {
+                color: blue;
+            }
+
+            .content-item p {
+                font-weight: normal;
+            }
+
+            a {
+                text-decoration: none;
+                color: #1C1C1C;
+                font-weight: bold;
+                text-align: center;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .year {
+                display: flex;
+                justify-content: center;
+                margin-left: 20px;
+                font-size: 20px;
+            }
+            .rs-image {
+                display: flex;
+            }
+            .image-rs {
+                max-width: 100%;
+                height: 50px;
+            }
+
+            .rsschool {
+                margin-left: 20px;
+            }
+		</style>
+	</head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="bogdan-cv">
+                    <h1>Bogdan Samonov</h1>
+                </div>
+            </header>
+            <main>
+                <div class="main-container">
+                    <div class="info-container">
+
+                        <div class="info-image">
+                            <img src="/rsschool-cv/images/Avatar.jpg" alt="Avatar" class="photo">
+                        </div>
+
+                        <div class="info-contacts">
+                            <ul class="contacts">
+                                <li><span class="parf">Telephone:</span> 375 (25) 524-09-55</li>
+                                <li><span class="parf">Email:</span> bogdansamonov@gmail.com</li>
+                                <li><span class="parf">Date of birth:</span> 12th May 1993</li>
+                                <li><span class="parf">Nationality:</span> Belarus</li>
+                                <li><span class="parf">Marital status:</span> Married</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="my-goal">
+
+                        <div class="goal-header">
+                            <h2>My Goal</h2>
+                            <div class="title-image">
+                                <img src="/rsschool-cv/images/line.png" alt="Line" class="line">
+                            </div>
+                            <p class="subtitle">
+                                I want to master a new profession in my life. I am a approachable and communicative person.
+                            </p>
+                        </div>
+
+                        <div class="goal-main">
+                            <div class="skills">
+                                <h3>
+                                    My personal qualities include:
+                                </h3>
+                                <ul class="personal-skill">
+                                    <li>Reliable</li>
+                                    <li>Determined</li>
+                                    <li>Eager to learn</li>
+                                    <li>Cooperative</li>
+                                </ul>
+                                <h3>
+                                    Ability 
+                                </h3>
+                                <ul class="personal-skill">
+                                    <li>Ability to work efficiently both individually and in a team</li>
+                                    <li>Decision making skills</li>
+                                    <li>Strong analytical thinking</li>
+                                    <li>Willingness to learn</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="my-live">
+                            <h3>
+                                My live
+                            </h3>
+                            <p class="live">
+                                Studied HTML / CSS basics from various sources on the internet.  I am studying on the <a href="https://freecodecamp.org">https://freecodecamp.org</a> English level A2. Passed testing on the site <a href="https://training.by/">https://training.by/</a>
+                            </p>
+                            <h3>
+                                Aducation 
+                            </h3>
+                            <p class="live">Francisk Skorina Gomel State University, Faculty of Physics and Information Technologies, Departmens Radiophysics and Electronics. Was qualified Physics engineer (2010-2015).</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="content-footer">
+                    <div class="content-item">
+                        <a href="https://github.com/Bogdan-VS" class="github">Мой GitHub</a>
+                        <p class="year">07.07.2021</p>
+                    </div>
+                    <div class="content-item">
+                        <div class="rs-image">
+                            <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool image" class="image-rs">
+                        </div>
+                        <a href="https://rs.school/js/" class="rsschool">RSSchool</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+	</body>
+</html>
